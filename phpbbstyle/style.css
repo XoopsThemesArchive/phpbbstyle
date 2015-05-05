@@ -1,0 +1,130 @@
+body {color: #000000; background-color:#e5e5e5;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;}
+
+table { width: 100%; margin: 0; padding: 0;}
+table td {padding: 0; border-width: 0; vertical-align: top; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+a {color: #006699; text-decoration: none; background-color: transparent;}
+a:hover {color: #dd6900;}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 { font-weight: bold; margin-bottom: 1px;}
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: square inside; color: #006699}
+
+input.formButton {}
+
+.item {border: 1px solid #99aab1;margin-bottom: 10px;}
+.itemHead {padding: 7px; color: #eeeeee; font-size: 14px; font-weight: bold; background-image: url(images/cellpic3.gif); background-color: #006699; border: 1px solid #ffffff;}
+.itemInfo {text-align: left; padding: 5px; background-color: #efefef; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;}
+.itemTitle a {font-size: 14px; font-weight: bold; font-variant: small-caps; color: #eeeeee;  background-color: transparent;}
+.itemPoster {font-size: 90%; font-style:italic;}
+.itemPostDate {font-size: 90%; font-style:italic;}
+.itemStats {font-size: 90%; font-style:italic;}
+.itemBody {padding: 10px;background-color: #efefef;border: 1px solid #ffffff;}
+.itemText {margin-top: 1px; margin-bottom: 1px; line-height: 150%;}
+.itemText:first-letter {font-size: 133%; font-weight: bold;}
+.itemFoot {text-align: right; padding: 5px; background-color: #efefef; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;border-bottom: 1px solid #ffffff;}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+th {background-color:#006699; background-image: url(images/cellpic3.gif); color: #FFA34F; padding : 7px; vertical-align : middle;}
+
+td#headerbanner {}
+td#headerbar {}
+
+td#leftcolumn {width: 160px; }
+td#leftcolumn .blockTitle {background-image: url(images/cellpic1.gif); background-color:#D1D7DC; padding: 7px; color: #000000; font-weight:bold; text-align: center;  vertical-align: middle;}
+td#leftcolumn .blockContent {background-color: #efefef; color: #000000; margin-bottom:8px;  padding:5px;line-height: 110%;}
+
+td#centercolumn {background-color: #ffffff;}
+
+td#centercolumn th {background-color:#006699; background-image: url(images/cellpic3.gif); color: #FFA34F; padding : 7px; vertical-align : middle;}
+td#centerCcolumn {width: 100%; padding: 0px;}
+td#centerCcolumn .blockTitle {font-weight: bold; font-size: 14px; padding: 5px; color: #dd6900;line-height: 120%;}
+td#centerCcolumn .blockContent {padding: 5px; margin-bottom: 5px; }
+
+td#centerLcolumn {width: 50%; padding-right: 5px;}
+td#centerLcolumn .blockTitle {font-weight: bold; font-size: 14px; padding: 5px; color: #dd6900;}
+td#centerLcolumn .blockContent {padding: 5px; margin-bottom: 5px; line-height: 120%;}
+
+td#centerRcolumn {width: 50%; padding-left: 5px;}
+td#centerRcolumn .blockTitle {font-weight: bold; font-size: 14px; padding: 5px; color: #dd6900;}
+td#centerRcolumn .blockContent {padding: 5px; margin-bottom: 5px; line-height: 120%;}
+
+div#content {text-align: left;}
+
+td#rightcolumn {width: 160px; }
+td#rightcolumn .blockTitle {background-image: url(images/cellpic1.gif); background-color:#D1D7DC; padding: 7px; color: #000000; font-weight:bold; text-align: center;  vertical-align: middle;}
+td#rightcolumn .blockContent {background-color: #efefef; color: #000000; margin-bottom:8px;  padding: 5px;line-height: 110%;}
+
+tr#footerbar {}
+
+td#mainmenu a {color: #333333; font-size:12px; background-color: transparent; display: block; margin: 0; padding: 4px; border-bottom: 1px solid #cdcdcd;}
+td#mainmenu a:hover {color: #dd6900; background-color: #dee3e7;}
+td#mainmenu a.menuTop {}
+td#mainmenu a.menuMain {border-bottom: 1px solid #cdcdcd;}
+td#mainmenu a.menuSub {padding-left: 15px; border-bottom: 1px solid #cdcdcd;}
+
+td#usermenu a {color: #333333; font-size:12px; background-color: transparent; display: block; margin: 0; padding: 4px; border-bottom: 1px solid #cdcdcd;}
+td#usermenu a:hover {color: #dd6900; background-color: #dee3e7;}
+td#usermenu a.menuTop {}
+td#usermenu a.menuMain {border-bottom: 1px solid #cdcdcd;}
+td#usermenu a.highlight {color: #dd0000; background-color: #ffeedd;}
+
+div#generalmenu a {background-color: transparent; display: block; margin: 0; padding: 4px; border-bottom: 1px solid #cdcdcd;}
+div#generalmenu a:hover {background-color: #ffeedd;}
+div#generalmenu a.menuTop {}
+div#generalmenu a.menuMain {border-bottom: 1px solid #cdcdcd;}
+div#generalmenu a.menuSub {padding-left: 15px; border-bottom: 1px solid #cdcdcd;}
+
+div#miscmenu a {background-color: transparent; display: block; margin: 0; padding: 4px; border-bottom: 1px solid #cdcdcd;}
+div#miscmenu a:hover {background-color: #ffeedd;}
+div#miscmenu a.menuTop {}
+div#miscmenu a.menuMain {border-bottom: 1px solid #cdcdcd;}
+div#miscmenu a.menuSub {padding-left: 15px; border-bottom: 1px solid #cdcdcd;}
+
+div#wikimenu a {background-color: transparent; display: block; margin: 0; padding: 4px; border-bottom: 1px solid #cdcdcd;}
+div#wikimenu a:hover {background-color: #ffeedd;}
+div#wikimenu a.menuTop {}
+div#wikimenu a.menuMain {border-bottom: 1px solid #cdcdcd;}
+div#wikimenu a.menuSub {padding-left: 15px; border-bottom: 1px solid #cdcdcd;}
+
+.outer {border: 1px solid #98aab1;}
+.outer th a { color: #cccccc; }
+.head {background-color: #c2cdd6; padding: 3px; font-weight: bold;}
+.even {background-color: #dee3e7; padding: 3px;}
+.odd {background-color: #efefef; padding: 3px;}
+.foot {background-color: #c2cdd6; padding: 3px; font-weight: bold;}
+tr.even td {background-color: #dee3e7; padding: 3px;}
+tr.odd td {background-color: #efefef; padding: 3px;}
+
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+
+div.xoopsCode { background: #FFFFFF; border: 1px solid #333333; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px; font-size: 100%;}
+div.xoopsQuote { background: #FFFFFF; border: 1px solid #333333; "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
+
+.comTitle {font-weight: bold; margin-bottom: 2px;font-size: 14px;}
+.comText {padding: 2px;line-height: 150%;}
+.comUserStat {font-size: 12px; color: #999999; font-family: Tahoma; border: 1px solid #AAAAAA; background-color: #FFFFFF; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #006699; font-weight: bold; font-size: 12px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 12px;font-weight: bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: 12px; }
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+input, select, textarea {color: #333333; background-color: #FFFFFF; border: 1px solid #AAAAAA; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; margin: 1px;}
+html {scrollbar-face-color: #DEE3E7;scrollbar-highlight-color: #FFFFFF;scrollbar-shadow-color: #DEE3E7;scrollbar-3dlight-color: #D1D7DC;scrollbar-arrow-color:  #006699;scrollbar-track-color: #EFEFEF;scrollbar-darkshadow-color: #98AAB1;}
+hr {height: 0px; border: solid #D1D7DC 0px; border-top-width: 1px;}
+#maintable {width: 100%; margin: auto;background-color:#ffffff;}
+.toppannel {BACKGROUND-IMAGE: url(images/bg_top.gif); BACKGROUND-REPEAT: repeat-x ;}
+.bottompannel {BACKGROUND-IMAGE: url(images/bg_bottom.gif); BACKGROUND-REPEAT: repeat-x ;}

@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" id="maintable"  style="border-top: 1px solid #98aab1; border-left: 1px solid #98aab1; border-right: 1px solid #98aab1;">
+  <tr>
+   <td rowspan="2" valign="top" class="toppannel" style="border-top: 1px solid #ffffff; border-left: 1px solid #ffffff;"><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>images/logo.gif" alt="" /></a></td>
+   <td width="100%" align="right" height="70" valign="top" class="toppannel" style="vertical-align: middle; border-right: 1px solid #ffffff; border-top: 1px solid #ffffff;">
+   <a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>images/home.gif" alt="" /></a>
+   <a href="<{$xoops_url}>/modules/news/"><img src="<{$xoops_imageurl}>images/news.gif" alt="" /></a>
+   <a href="<{$xoops_url}>/modules/mydownloads/"><img src="<{$xoops_imageurl}>images/downloads.gif" alt="" /></a>
+   <a href="<{$xoops_url}>/modules/xcgal/"><img src="<{$xoops_imageurl}>images/photos.gif" alt="" /></a>
+   <a href="<{$xoops_url}>/modules/mylinks/"><img src="<{$xoops_imageurl}>images/links.gif" alt="" /></a>
+   <a href="<{$xoops_url}>/modules/newbb/"><img src="<{$xoops_imageurl}>images/forum.gif" alt="" /></a>
+   <a href="<{$xoops_url}>/search.php"><img src="<{$xoops_imageurl}>images/search.gif" alt="" /></a>
+   </td>
+  </tr>
+  <tr>
+    <td height="50" align="center" valign="top">
+	<{if $xoops_isuser}>
+	Welcome<a href="<{$xoops_url}>/user.php"> <b><{$xoops_uname}></b> </a>&nbsp;
+	<{/if}>
+    <{if !$xoops_isuser}>
+	<form action="<{$xoops_url}>/user.php" method="post" style="margin: 5px;">
+	<input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+	<input type="hidden" name="op" value="login" />
+	username: <input type="text" name="uname" size="12"  />
+	password: <input type="password" name="pass" size="12"  />&nbsp;
+	<input type="submit" value="login" />&nbsp;&nbsp;
+	<img src="<{$xoops_imageurl}>images/icon_mini_faq.gif" alt="" />
+	<a href="<{$xoops_url}>/user.php#lost">forget password</a>&nbsp; 
+	<img src="<{$xoops_imageurl}>images/icon_mini_register.gif" alt="" />
+	<a href="<{$xoops_url}>/register.php"> register</a> 
+	</form>
+	<{else}>&nbsp;&nbsp;
+	<img src="<{$xoops_imageurl}>images/icon_mini_profile.gif" alt="" />
+	<a href="<{$xoops_url}>/user.php">Account </a>&nbsp;
+	<img src="<{$xoops_imageurl}>images/icon_mini_groups.gif" alt="" />
+	<a href="<{$xoops_url}>/edituser.php">Edit </a>&nbsp;
+	<img src="<{$xoops_imageurl}>images/icon_mini_members.gif" alt="" />
+	<a href="<{$xoops_url}>/notifications.php">Notification</a>&nbsp;
+	<img src="<{$xoops_imageurl}>images/icon_mini_message.gif" alt="" />
+	<a href="<{$xoops_url}>/viewpmsg.php">Message</a>&nbsp;
+	<{if $xoops_isadmin}>
+	<img src="<{$xoops_imageurl}>images/icon_mini_groups.gif" alt="" />
+	<a href="<{$xoops_url}>/admin.php">Administration</a>&nbsp;
+	<{/if}>
+	<img src="<{$xoops_imageurl}>images/icon_mini_login.gif" alt="" />
+	<a href="<{$xoops_url}>/user.php?op=logout">Logout</a>&nbsp;
+	<{/if}>
+
+   </td>
+  </tr>
+</table>
+
+<table cellpadding="0" cellspacing="10" id="maintable" style=" border-left: 1px solid #98aab1; border-right: 1px solid #98aab1;">
+    <tr>
+	<{if $xoops_lblocks}>
+	    <td id="leftcolumn">
+	    <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+         <{include file="phpbbstyle/theme_blockleft.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+	</td>
+	<{/if}>
+	<td id="centercolumn">
+	    <!-- Display center blocks if any -->
+           <{if $xoops_showcblock == 1}>
+             <table cellspacing="0">
+             <tr>
+             <td id="centerCcolumn" colspan="2">
+              <!-- Start center-center blocks loop -->
+              <{foreach item=block from=$xoops_ccblocks}>
+               <{include file="phpbbstyle/theme_blockcenter_c.html"}>
+              <{/foreach}>
+              <!-- End center-center blocks loop -->
+            </td>
+          </tr>
+          <tr>
+            <td id="centerLcolumn">
+              <!-- Start center-left blocks loop -->
+              <{foreach item=block from=$xoops_clblocks}>
+               <{include file="phpbbstyle/theme_blockcenter_l.html"}>
+              <{/foreach}>
+              <!-- End center-left blocks loop -->
+			  </td><td id="centerRcolumn">
+              <!-- Start center-right blocks loop -->
+              <{foreach item=block from=$xoops_crblocks}>
+               <{include file="phpbbstyle/theme_blockcenter_r.html"}>
+              <{/foreach}>
+              <!-- End center-right blocks loop -->
+             </td>
+          </tr>
+      </table>
+       <{/if}>
+        <!-- End display center blocks -->
+       <div id="content"><{$xoops_contents}></div>
+      </td>
+	  <{if $xoops_showrblock == 1}>
+       <td id="rightcolumn">
+	    <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+         <{include file="phpbbstyle/theme_blockright.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->
+      </td>
+      <{/if}>
+      </tr>
+    </table>
+	</td>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" id="maintable"  style="border-bottom: 1px solid #98aab1; border-left: 1px solid #98aab1; border-right: 1px solid #98aab1;">
+  <tr>
+    <td height="44" valign="top" class="bottompannel" style="border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">&nbsp;</td></tr>
+</table>
+
+<table  border="0" cellpadding="0" cellspacing="0" >
+  <!--head-->
+  <tr>
+    <td align="center"><br><{$xoops_footer}> &nbsp;|&nbsp; Theme by sabei@<a href="http://www.xoops.org.cn">Xoops China</a>
+	</td>
+  </tr>
+</table>
+
+</body>
+</html>
